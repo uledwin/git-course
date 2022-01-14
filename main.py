@@ -1,7 +1,11 @@
-from src.app  import sum
+from src.app  import flask
 
-def main () -> None;
-    sum (5, 10)
+HOST="localhost"
+PORT=4000
+DEBUG=True
+
+#def main () -> None;
+#   sum (5, 10)
 
 if __name__ == '___main__':
-    main()
+    app.run(HOST, PORT, DEBUG)
