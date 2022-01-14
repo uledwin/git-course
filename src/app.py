@@ -1,8 +1,8 @@
-from flask import flask
+from flask import Flask
 
-app = flask(__name__)
+app = Flask(__name__)
 
-#def sum(a ,b)
-#    return a + b
 
-    
+@app.route('/')
+def index():
+    return 'Hello, World!'
